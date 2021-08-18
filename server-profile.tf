@@ -10,3 +10,7 @@ resource "intersight_server_profile" "server1" {
     moid        = data.intersight_organization_organization.terra_demo.results[0].moid
     }
  }
+
+output "profile_moid" {
+    value  = intersight_server_profile.server1.moid
+}

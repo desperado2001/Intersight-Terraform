@@ -8,12 +8,12 @@ variable "ntp_timezone" {
     default = "Asia/Manila"
 }
 
-variable "intersight_api_secret"{
+variable "secretkey"{
     type = string
-    default ="secret"
+    default =""
 }
 
-variable "intersight_api_key"{
+variable "api_key"{
     type = string
-    default = "5981daad3e95200001005cc7/5e966c837564612d30f67128/611b1c057564612d31888a0e"
+    default = ""
 }
