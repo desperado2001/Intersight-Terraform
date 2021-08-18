@@ -7,7 +7,7 @@ resource "intersight_server_profile" "server1" {
   }
   tags {
       key = "loc"
-      value = "Singapore"
+      value = "Manila"
   }
   organization {
     object_type = "organization.Organization"
