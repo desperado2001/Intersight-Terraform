@@ -1,2 +1,7 @@
 intersight.auto.tfvars
 secret
+.terraform/providers/registry.terraform.io/ciscodevnet/intersight/1.0.13/darwin_amd64/CHANGELOG.md
+.terraform.lock.hcl
+.terraform/providers/registry.terraform.io/ciscodevnet/intersight/1.0.13/darwin_amd64/LICENSE
+.terraform/providers/registry.terraform.io/ciscodevnet/intersight/1.0.13/darwin_amd64/README.md
+.terraform/providers/registry.terraform.io/ciscodevnet/intersight/1.0.13/darwin_amd64/terraform-provider-intersight_v1.0.13
