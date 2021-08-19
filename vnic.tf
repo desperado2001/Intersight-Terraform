@@ -1,5 +1,5 @@
 resource "intersight_vnic_eth_adapter_policy" "v_eth_adapter1" {
-  name                    = "v_eth_adapter1"
+  name                    = "v_eth_adapter1-Terraform"
   rss_settings            = true
   uplink_failback_timeout = 5
   organization {
@@ -42,4 +42,8 @@ resource "intersight_vnic_eth_adapter_policy" "v_eth_adapter1" {
     rx_checksum   = true
     tx_checksum   = true
   }
+  profiles {
+    moid = intersight_server_profile.server1.moid
+    object_type = "server.Profile"
+  } 
 }
