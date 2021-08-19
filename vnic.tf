@@ -6,10 +6,7 @@ resource "intersight_vnic_eth_adapter_policy" "v_eth_adapter1" {
     object_type = "organization.Organization"
     moid        = data.intersight_organization_organization.terra_demo.results[0].moid
   }
-  profiles {
-    moid = intersight_server_profile.server1.moid
-    object_type = "server.Profile"
-  } 
+  
   vxlan_settings {
     enabled = false
   }
