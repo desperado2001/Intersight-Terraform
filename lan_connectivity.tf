@@ -4,10 +4,6 @@ resource "intersight_vnic_lan_connectivity_policy" "vnic_lan1" {
   iqn_allocation_type = "None"
   placement_mode      = "auto"
   target_platform     = "FIAttached"
-  organization {
-    object_type = "organization.Organization"
-    moid        = var.organization
-  }
   profiles {
     moid = intersight_server_profile.server1.moid
     object_type = "server.Profile"
