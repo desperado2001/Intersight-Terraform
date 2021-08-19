@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    vsphere = {
-      source = "hashicorp/vsphere"
-      version = "1.24.3"
-    }
-  }
-}
-
 module "vm" {
   source  = "Terraform-VMWare-Modules/vm/vsphere"
   version = "3.3.0"
