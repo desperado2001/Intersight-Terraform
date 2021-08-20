@@ -8,4 +8,3 @@ secret
 .terraform/providers/registry.terraform.io/hashicorp/vsphere/2.0.2/darwin_amd64/terraform-provider-vsphere_v2.0.2_x5
 *.tfvars
 *.backup
-*.tfstate
