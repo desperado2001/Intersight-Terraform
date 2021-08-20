@@ -1,5 +1,5 @@
 
-data "intersight_organization_organization" "terra_demo" {
+data "intersight_organization_organization" "default" {
     name = "default"
 }
 
