@@ -50,20 +50,20 @@ variable "vsphere_vm_cpu" {
 variable "vsphere_vm_memory" {
   type = number
   description = "the amount of memory in MB"
-  default = 2048
+  default = 4096
 }
 
 variable "vsphere_vm_guest" {
   type = string
   description = "the name of the os type "
-  default = "centos8_64Guest"
+  default = "windows9Server64Guest"
 }
 
 variable "vsphere_vm_disksize" {
   type = number
   description = "the size of the disk in GB"
-  default = 20
-}
+  default = 60
+  }
 
 variable "timeout" {
   description = "The timeout, in minutes, to wait for the virtual machine clone to complete."

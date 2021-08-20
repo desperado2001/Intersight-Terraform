@@ -7,3 +7,6 @@ secret
 .terraform/providers/registry.terraform.io/ciscodevnet/intersight/1.0.13/darwin_amd64/terraform-provider-intersight_v1.0.13
 .terraform/providers/registry.terraform.io/hashicorp/vsphere/2.0.2/darwin_amd64/terraform-provider-vsphere_v2.0.2_x5
 *.tfvars
+terraform.tfstate
+*.backup
+*.tfstate
