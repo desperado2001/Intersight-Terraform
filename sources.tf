@@ -4,5 +4,5 @@ data "intersight_organization_organization" "default" {
 }
 
 output "organization" {
-    value = data.intersight_organization_organization.terra_demo.results[0].moid
+    value = data.intersight_organization_organization.default.results[0].moid
 }

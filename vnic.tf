@@ -4,7 +4,7 @@ resource "intersight_vnic_eth_adapter_policy" "v_eth_adapter1" {
   uplink_failback_timeout = 5
   organization {
     object_type = "organization.Organization"
-    moid        = data.intersight_organization_organization.terra_demo.results[0].moid
+    moid        = data.intersight_organization_organization.default.results[0].moid
   }
   
   vxlan_settings {
