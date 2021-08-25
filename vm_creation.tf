@@ -50,7 +50,8 @@ resource "vsphere_virtual_machine" "vm" {
   network_interface {
     network_id = data.vsphere_network.network.id
   }
-
+  scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
+  
   disk {
     label = "disk0"
     size  = 50
