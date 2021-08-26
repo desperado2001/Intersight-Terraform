@@ -51,7 +51,12 @@ resource "vsphere_virtual_machine" "vm" {
     network_id = data.vsphere_network.network.id
   }
   scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
-  
+  ipv4 {
+    ip = "192.168.254.254"
+    netmask = "255.255.255.0"
+    gw = "192.168.254.1"
+
+  }
   disk {
     label = "disk0"
     size  = 50
