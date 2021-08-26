@@ -52,6 +52,7 @@ resource "vsphere_virtual_machine" "vm" {
     }
 */
   scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
+
   disk {
     label = "disk0"
     size  = 50
@@ -64,7 +65,7 @@ resource "vsphere_virtual_machine" "vm" {
     }
  
   }
-}
+
 
 /*
 #No more VM module because they want to customize, and I don't want that
