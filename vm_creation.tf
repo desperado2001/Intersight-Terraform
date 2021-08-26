@@ -47,10 +47,10 @@ resource "vsphere_virtual_machine" "vm" {
   memory   = var.vsphere_vm_memory #1024
   guest_id = var.vsphere_vm_guest #"other3xLinux64Guest"
 
-/*  network_interface {
+  network_interface {
     network_id = data.vsphere_network.network.id
     }
-*/
+
   scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
 
   disk {
