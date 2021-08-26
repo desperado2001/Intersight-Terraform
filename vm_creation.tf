@@ -53,7 +53,7 @@ resource "vsphere_virtual_machine" "vm" {
     ipv4_netmask = 24
     }
 
-  ipv4_gateway "192.168.254.1"
+  ipv4_gateway = "192.168.254.1"
 
   scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
   disk {
