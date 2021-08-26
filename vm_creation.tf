@@ -67,12 +67,7 @@ resource "vsphere_virtual_machine" "vm" {
     timeout       = var.timeout
 
     }
-
-  }
-
-
 }
-
 
 /*
 #No more VM module because they want to customize, and I don't want that
