@@ -49,14 +49,9 @@ resource "vsphere_virtual_machine" "vm" {
 
   network_interface {
     network_id = data.vsphere_network.network.id
-  }
+    }
+     
   scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
-  ipv4 {
-    ip = "192.168.254.254"
-    netmask = "255.255.255.0"
-    gw = "192.168.254.1"
-
-  }
   disk {
     label = "disk0"
     size  = 50
@@ -66,6 +61,15 @@ resource "vsphere_virtual_machine" "vm" {
     template_uuid = data.vsphere_virtual_machine.template.id
     linked_clone  = var.linked_clone
     timeout       = var.timeout
+
+    customize{
+      network_interface{
+        ipv4_address = "192.168.254.26"
+        ipv4_netmask = 24
+      }
+
+    ipv4_gateway = "192.168.254.1"
+    }
 
   }
 
