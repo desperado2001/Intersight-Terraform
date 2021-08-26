@@ -49,11 +49,7 @@ resource "vsphere_virtual_machine" "vm" {
 
   network_interface {
     network_id = data.vsphere_network.network.id
-    ipv4_address = "192.168.254.26"
-    ipv4_netmask = 24
     }
-
-  ipv4_gateway = "192.168.254.1"
 
   scsi_type = "${data.vsphere_virtual_machine.template.scsi_type}"
   disk {
