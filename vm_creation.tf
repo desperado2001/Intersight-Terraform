@@ -62,7 +62,15 @@ resource "vsphere_virtual_machine" "vm" {
     linked_clone  = var.linked_clone
     timeout       = var.timeout
 
+    customize{
+    network_interface{
+      ipv4_address = "10.0.0.10"
+      ipv4_netmask = 24
     }
+
+    }
+ 
+  }
 }
 
 /*
